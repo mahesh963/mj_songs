@@ -1,0 +1,122 @@
+import {StyleSheet, Dimensions} from 'react-native';
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: 'white',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+  },
+
+  header: {
+    flexDirection: 'row',
+    minHeight: windowWidth * 0.1946,
+    width: windowWidth,
+    backgroundColor: '#0f0f0f',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  headerLeft: {flex: 0.1, justifyContent: 'center', alignItems: 'center'},
+  headerRight: {flex: 0.9, justifyContent: 'center', alignItems: 'center'},
+  headerText: {
+    fontSize: windowWidth * 0.0416,
+    color: '#ffffff',
+  },
+  leftArrow: {
+    width: windowWidth * 0.0516,
+    height: windowWidth * 0.0516,
+    alignSelf: 'center',
+  },
+  mainContainer: {flex: 1, backgroundColor: 'white'},
+  imgBgView: {
+    width: windowWidth / 1.596,
+    height: windowWidth / 1.596,
+    alignSelf: 'center',
+    marginTop: windowWidth * 0.0766,
+    justifyContent: 'center',
+    borderWidth: 0.6,
+    borderColor: 'grey',
+    shadowColor: '#000',
+    shadowOffset: {width: 1, height: 0},
+    shadowOpacity: 0.5,
+    shadowRadius: 3,
+    elevation: 3,
+    borderRadius: windowWidth * 0.0136,
+  },
+  artworkImg: {
+    width: windowWidth / 1.6,
+    height: windowWidth / 1.6,
+    alignSelf: 'center',
+    borderRadius: windowWidth * 0.0136,
+  },
+  centerContainer: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: windowWidth * 0.06,
+  },
+  leftTitle: {
+    fontSize: windowWidth * 0.0496,
+    color: '#4f4f4f',
+    alignSelf: 'center',
+    fontWeight: 'bold',
+  },
+  rightName: {
+    fontSize: windowWidth * 0.046,
+    color: '#4f4f4f',
+    fontWeight: 'bold',
+  },
+  dateText: {
+    fontSize: windowWidth * 0.0376,
+    color: '#4f4f4f',
+    textAlign: 'center',
+    alignSelf: 'center',
+    fontWeight: 'bold',
+  },
+  trackCollection: {
+    fontSize: windowWidth * 0.0416,
+    color: '#4f4f4f',
+    textAlign: 'center',
+    alignSelf: 'center',
+    marginTop: windowWidth * 0.00136,
+  },
+
+  trackTitle: {
+    fontSize: windowWidth * 0.0416,
+    color: '#4f4f4f',
+    textAlign: 'center',
+    alignSelf: 'center',
+    marginTop: windowWidth * 0.0496,
+    fontWeight: 'bold',
+    textDecorationLine: 'underline',
+  },
+  priceText: {
+    fontSize: windowWidth * 0.0516,
+    color: '#4f4f4f',
+    textAlign: 'center',
+    alignSelf: 'center',
+    fontWeight: 'bold',
+    marginTop: windowWidth * 0.0496,
+  },
+  descriptionTitle: {
+    fontSize: windowWidth * 0.0416,
+    color: '#4f4f4f',
+    textAlign: 'center',
+    alignSelf: 'center',
+    marginTop: windowWidth * 0.0496,
+    fontWeight: 'bold',
+    textDecorationLine: 'underline',
+  },
+  descriptionText: {
+    fontSize: windowWidth * 0.0416,
+    color: '#4f4f4f',
+    textAlign: 'left',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    marginTop: windowWidth * 0.00136,
+  },
+});
